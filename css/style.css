@@ -72,10 +72,10 @@ img.broken{opacity:0}
 @keyframes glow{to{transform:translate(20px,-14px) scale(1.08);opacity:.85}}
 .hero-content{position:absolute;left:clamp(24px,5.6vw,80px);top:50%;transform:translateY(-40%);width:max-content}
 .hero-sub{font-family:var(--serif);font-size:clamp(30px,3.4vw,52px);line-height:1;margin-bottom:-.05em;padding-left:.08em}
-.hero-title{font-family:var(--serif);font-weight:400;font-size:clamp(90px,11.6vw,186px);line-height:1;letter-spacing:-.015em;white-space:nowrap;text-shadow:0 10px 40px rgba(0,0,0,.25)}
+.hero-title{font-family:var(--serif);font-weight:400;font-size:clamp(90px,12.8vw,210px);line-height:1;letter-spacing:-.015em;white-space:nowrap;text-shadow:0 10px 40px rgba(0,0,0,.25)}
 .hero-text{max-width:320px;font-size:12.5px;line-height:1.75;color:#d8d0c7;margin:28px 0 46px}
 .hero-right{position:relative;overflow:hidden}
-.hero-right img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);animation:heroZoom 14s ease-out forwards}
+.hero-right img{width:100%;height:100%;object-fit:cover;object-position:40% center;filter:brightness(.78) saturate(.9);transform:scale(1.06);animation:heroZoom 14s ease-out forwards}
 @keyframes heroZoom{to{transform:scale(1)}}
 .hero-right::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,26,25,.35),transparent 30%)}
 .scroll-hint{position:absolute;left:clamp(24px,5.6vw,80px);bottom:30px;font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:12px;z-index:3}
@@ -278,8 +278,8 @@ textarea.input{resize:vertical;min-height:110px}
 .t-layer{position:absolute;inset:0}
 .t-layer img{width:100%;height:100%;object-fit:cover;object-position:center 60%}
 .t-layer::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,20,22,.55) 0%,rgba(20,20,22,.2) 40%,rgba(20,20,22,.35) 80%,rgba(20,20,22,.75) 100%)}
-.t-front{clip-path:inset(54% 0 0 0);z-index:3}
-.t-big{position:absolute;z-index:2;left:50%;top:23%;transform:translateX(-50%);font-family:var(--sans);font-weight:500;font-size:clamp(110px,22.5vw,350px);line-height:.78;letter-spacing:-.025em;color:var(--cream);white-space:nowrap;pointer-events:none}
+.t-front{display:none}
+.t-big{position:absolute;z-index:2;left:50%;top:23%;transform:translateX(-50%);font-family:var(--sans);font-weight:500;font-size:clamp(110px,22.5vw,350px);line-height:.78;letter-spacing:-.025em;color:var(--cream);white-space:nowrap;pointer-events:none;-webkit-mask-image:linear-gradient(180deg,#000 48%,rgba(0,0,0,.12) 100%);mask-image:linear-gradient(180deg,#000 48%,rgba(0,0,0,.12) 100%)}
 .t-script{position:absolute;z-index:4;right:7%;top:51%;font-family:var(--script);font-size:clamp(70px,10.5vw,170px);line-height:1;color:var(--cream);pointer-events:none;text-shadow:0 6px 30px rgba(0,0,0,.35)}
 .t-studio{position:absolute;z-index:4;left:7.5%;top:20%;font-size:11px;color:rgba(255,255,255,.8)}
 .t-year{position:absolute;z-index:4;left:59%;top:18.5%;font-size:11px;line-height:1.5;color:rgba(255,255,255,.8)}
@@ -395,8 +395,9 @@ textarea.input{resize:vertical;min-height:110px}
   .site-header{gap:8px}
   .socials{display:none}
   .hero{grid-template-columns:1fr;grid-template-rows:auto 46vh;height:auto;max-height:none;min-height:0}
-  .hero-left{min-height:66vh;overflow:hidden}
-  .hero-content{left:24px;top:auto;bottom:34px;transform:none;width:auto;right:24px;position:absolute}
+  .hero-left{overflow:hidden}
+  .hero-left{min-height:0;padding:120px 0 44px}
+  .hero-content{position:relative;left:auto;top:auto;bottom:auto;transform:none;width:auto;padding:0 24px}
   .hero-title{font-size:clamp(74px,22vw,150px)}
   .hero-num{font-size:70vw}
   .scroll-hint{display:none}
@@ -438,6 +439,8 @@ textarea.input{resize:vertical;min-height:110px}
   .form-card{padding:30px 22px}
   .t-desc{grid-template-columns:1fr;gap:14px}
   .page-hero{padding:140px 0 50px}
+  .page-hero h1{font-size:clamp(40px,12.5vw,72px)}
+  .hero-text{margin:22px 0 30px}
   .lb-prev,.lb-next{top:auto;bottom:80px;transform:none}
   .pill-header{top:28px;left:28px;right:28px}
   .terra{padding:10px}
