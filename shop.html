@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Магазин — Intareo</title>
+<meta name="description" content="Меблі, світло та декор від студії Intareo. Доставка по всій Україні.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="shop">
+<div id="header"></div>
+
+<main>
+  <section class="page-hero">
+    <span class="bignum" aria-hidden="true">04</span>
+    <div class="glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="crumbs"><a href="index.html">Головна</a> / Магазин</div>
+      <h1><small>Меблі та</small>Декор</h1>
+      <p>Предмети, які ми самі обираємо для своїх проєктів. Доставка Новою поштою по всій Україні, оплата при отриманні.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="shopbar">
+        <div class="filters">
+          <button class="chip active" data-cat="all">Усі</button>
+          <button class="chip" data-cat="chairs">Крісла</button>
+          <button class="chip" data-cat="sofas">Дивани</button>
+          <button class="chip" data-cat="light">Освітлення</button>
+          <button class="chip" data-cat="decor">Декор</button>
+        </div>
+        <div style="display:flex;align-items:center;gap:16px">
+          <span id="shopCount" style="font-size:13px;color:var(--muted)"></span>
+          <select class="select" id="sort" aria-label="Сортування">
+            <option value="pop">За популярністю</option>
+            <option value="asc">Спочатку дешевші</option>
+            <option value="desc">Спочатку дорожчі</option>
+            <option value="name">За назвою</option>
+          </select>
+        </div>
+      </div>
+      <div class="products" id="products"></div>
+    </div>
+  </section>
+</main>
+
+<div id="footer"></div>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Контакти — Intareo</title>
+<meta name="description" content="Зв'яжіться зі студією Intareo: безкоштовна консультація, розрахунок вартості дизайн-проєкту.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+<div id="header"></div>
+
+<main>
+  <section class="page-hero">
+    <span class="bignum" aria-hidden="true">05</span>
+    <div class="glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="crumbs"><a href="index.html">Головна</a> / Контакти</div>
+      <h1><small>Давайте</small>Знайомитись</h1>
+      <p>Залиште заявку — ми передзвонимо протягом робочого дня й домовимося про безкоштовну консультацію.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container contact-grid">
+      <div class="cinfo reveal">
+        <div class="cinfo-item"><small>Телефон</small><a href="tel:+380670000000">+38 067 000 00 00</a></div>
+        <div class="cinfo-item"><small>E-mail</small><a href="mailto:hello@intareo.ua">hello@intareo.ua</a></div>
+        <div class="cinfo-item"><small>Студія</small><p>Київ, вул. Антоновича, 50<br>3 поверх, офіс 12</p></div>
+        <div class="cinfo-item"><small>Графік</small><p>Пн–Пт 10:00–19:00<br>Сб за домовленістю</p></div>
+        <div class="soc-row">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4ZM18.4 6.8a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0ZM21.9 8c-.1-1.6-.4-3-1.6-4.3S17.6 2.1 16 2c-1.6-.1-6.4-.1-8 0-1.6.1-3 .4-4.3 1.6S2.1 6.4 2 8c-.1 1.6-.1 6.4 0 8 .1 1.6.4 3 1.6 4.3S6.4 21.9 8 22c1.6.1 6.4.1 8 0 1.6-.1 3-.4 4.3-1.6s1.5-2.7 1.6-4.3c.1-1.6.1-6.4 0-8Zm-2.1 9.8a3.2 3.2 0 0 1-1.8 1.8c-1.3.5-4.3.4-5.7.4s-4.4.1-5.7-.4a3.2 3.2 0 0 1-1.8-1.8C4.3 16.5 4.4 13.4 4.4 12s-.1-4.5.4-5.7A3.2 3.2 0 0 1 6.6 4.4C7.9 3.9 10.9 4 12.3 4s4.4-.1 5.7.4a3.2 3.2 0 0 1 1.8 1.8c.5 1.3.4 4.3.4 5.7s.1 4.5-.4 5.7Z"/></svg></a>
+          <a href="https://t.me/" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="M21.9 3.4 18.6 19.8c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.2-8.3c.4-.4-.1-.6-.6-.2L6 13.4 1.1 11.9c-1.1-.3-1.1-1.1.2-1.6L20.5 2.9c.9-.3 1.7.2 1.4 1.5Z"/></svg></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6c0-1 .5-1.5 1.6-1.5H17V1h-2.6C11.6 1 10.5 2.8 10.5 5.6V8H8v3.5h2.5V23H14V11.5h2.7L17 8h-3Z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="form-card reveal" id="form">
+        <form id="contactForm" novalidate>
+          <h3>Заявка на консультацію</h3>
+          <p style="color:var(--muted);margin-bottom:30px;font-size:14px">Поля з * обов'язкові.</p>
+          <div class="row2">
+            <div class="field"><label for="f-name">Ім'я *</label><input class="input" id="f-name" name="name" autocomplete="name"><span class="ferr"></span></div>
+            <div class="field"><label for="f-phone">Телефон *</label><input class="input" id="f-phone" name="phone" type="tel" placeholder="+380" autocomplete="tel"><span class="ferr"></span></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label for="f-email">E-mail</label><input class="input" id="f-email" name="email" type="email" autocomplete="email"><span class="ferr"></span></div>
+            <div class="field"><label for="f-service">Послуга</label>
+              <select class="input" id="f-service" name="service">
+                <option value="Консультація">Консультація</option>
+                <option value="Старт">Тариф «Старт» — планування</option>
+                <option value="Дизайн-проєкт">Тариф «Дизайн-проєкт»</option>
+                <option value="Преміум">Тариф «Преміум» — під ключ</option>
+                <option value="Архітектура">Архітектура будинку</option>
+              </select></div>
+          </div>
+          <div class="field"><label for="f-msg">Про ваш об'єкт</label><textarea class="input" id="f-msg" name="message" placeholder="Площа, місто, побажання…"></textarea></div>
+          <label class="check"><input type="checkbox" name="agree"> Погоджуюся на обробку персональних даних</label>
+          <button class="btn btn--block" type="submit">Надіслати заявку</button>
+        </form>
+        <div class="success" id="formSuccess">
+          <div class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="m5 12 5 5L20 7"/></svg></div>
+          <h3>Дякуємо, <span id="sName"></span>!</h3>
+          <p style="color:var(--muted);margin:10px 0 26px">Заявку отримано. Ми зателефонуємо вам найближчим часом.</p>
+          <button class="btn btn--ghost" id="againBtn" type="button">Надіслати ще одну</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <iframe class="map" src="https://www.google.com/maps?q=%D0%9A%D0%B8%D1%97%D0%B2%2C%20%D0%B2%D1%83%D0%BB.%20%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B8%D1%87%D0%B0%2C%2050&output=embed" title="Карта: студія Intareo" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <section class="section" id="faq" style="padding-top:0">
+    <div class="container">
+      <div class="sec-head reveal" style="justify-content:center;text-align:center"><div><span class="eyebrow">FAQ</span><h2 class="h2" style="margin:0">Часті питання</h2></div></div>
+      <div class="faq reveal">
+        <div class="faq-item open"><button class="faq-q" aria-expanded="true">Скільки триває розробка дизайн-проєкту?<i></i></button><div class="faq-a"><div><p>Для квартири до 100 м² — 6–8 тижнів. Для будинку — від 2 до 4 місяців, залежно від складності.</p></div></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Чи працюєте ви в інших містах?<i></i></button><div class="faq-a"><div><p>Так, ми працюємо по всій Україні. Обміри робимо самі або через партнерів, а нагляд — з виїздами за графіком.</p></div></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Як відбувається оплата?<i></i></button><div class="faq-a"><div><p>Поетапно: 30% на старті, далі після погодження кожного етапу. Працюємо за договором як ФОП.</p></div></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Чи можна купити меблі з вашого магазину без проєкту?<i></i></button><div class="faq-a"><div><p>Звісно. Додайте товари в кошик і оформіть замовлення — менеджер підтвердить наявність і доставку.</p></div></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
